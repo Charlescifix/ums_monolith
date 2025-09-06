@@ -1,0 +1,10 @@
+# Development dependencies
+
+-r base.txt
+
+# Development tools
+django-debug-toolbar>=4.0.0
+pytest>=7.0.0
+pytest-django>=4.5.0
+black>=23.0.0
+flake8>=6.0.0

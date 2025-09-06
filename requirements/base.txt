@@ -1,0 +1,15 @@
+# Core dependencies for VLE User Management System
+
+Django>=4.2,<5.0
+djangorestframework>=3.14.0
+django-environ>=0.10.0
+django-cors-headers>=4.0.0
+django-extensions>=3.2.0
+djangorestframework-simplejwt>=5.2.0
+dependency-injector>=4.41.0
+
+# Database
+psycopg2-binary>=2.9.0
+
+# Password validation
+argon2-cffi>=21.0.0

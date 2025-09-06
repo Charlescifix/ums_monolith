@@ -1,0 +1,99 @@
+# VLE User Management System - Git Ignore File
+# Decision: Comprehensive gitignore to prevent sensitive data and build artifacts
+
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+*.pem
+*.key
+
+# Django
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static/
+
+# Django migrations (keep these for now, may change in production)
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# Python
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Testing
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+
+# Documentation builds
+docs/_build/
+
+# Deployment
+.railway/
+railway.json
+
+# Cache
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Database backups
+*.backup
+*.dump
+
+# PDF files (project documents - remove if you want to version them)
+*.pdf
+
+# Node modules (if using frontend tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Redis dump
+dump.rdb
