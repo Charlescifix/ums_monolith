@@ -1,0 +1,4 @@
+# Railway deployment requirements
+# This file ensures Railway can install Python dependencies
+
+-r requirements/production.txt
