@@ -21,6 +21,7 @@ WORKDIR /app
 
 # Install Python dependencies
 COPY requirements.txt .
+COPY requirements/ requirements/
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Final stage
