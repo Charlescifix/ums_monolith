@@ -1,0 +1,95 @@
+# Docker ignore file for VLE User Management System
+# Excludes files not needed in the Docker image
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# Testing
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+*.coverage
+
+# Documentation
+docs/_build/
+*.pdf
+*.md
+README.md
+
+# Database
+*.sqlite3
+*.db
+db.sqlite3-journal
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Deployment
+.railway/
+railway.json
+
+# Media and static (will be collected at runtime)
+media/
+staticfiles/
+static/
+
+# Cache
+.cache/
+*.cache
+
+# Temporary files
+*.tmp
+*.temp
+
+# Database backups
+*.backup
+*.dump
+
+# Development scripts
+scripts/
+
+# Tests
+tests/
+*/tests/
+*/*/tests/
